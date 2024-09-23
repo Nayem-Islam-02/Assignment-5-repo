@@ -47,11 +47,11 @@
                 <div class=" w-fit   mx-auto mt-3 ">
 
                     <div  >
-                        <button class="bg-yellow-200 px-10 py-3 font-bold mr-3  ">
+                        <button id="donation" class="bg-yellow-200 px-10 py-3 font-bold mr-3  ">
                             Donation
                         </button>
 
-                        <button class="px-10 py-3 border border-b-2 font-bold ">
+                        <button id="history" class="px-10 py-3 border border-b-2 font-bold  ">
                             History
                         </button>
                     </div>
@@ -69,7 +69,7 @@
     </header>
     <!-- header end here -->
 
-    <main class="w-10/12 lg:w-8/12  mx-auto mt-10">
+    <main class="w-10/12 lg:w-8/12  mx-auto mt-10 border border-red-700  " id="cards-donation">
         <!-- card one -->
          <div class="border rounded-md  xl:flex  px-3 py-3  ">
             <!-- card one left side -->
@@ -232,7 +232,13 @@
 
          </div>
            <!-- card three end -->
-    </main>
+        </main>
+
+           <!-- history of donation -->
+            <section id="donationHistory" class=" md:w-9/12 md:mx-auto mt-6 hidden  ">
+                <div id="history-list" class="flex flex-col gap-4"></div>
+            </section>
+    
 
     <footer  class="bg-zinc-100  w-full h-20 mt-10">
 
