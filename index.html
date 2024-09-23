@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- header section start -->
-    <header class=" ">
+    <header class=" border border-red-600 ">
         
 
         <nav>
@@ -33,7 +33,7 @@
 
                 <div class="flex gap-2 ml-24 sm:ml-0 mt-3 sm:mt-0">
                     <img src="./assets/coin.png" alt="">
-                    <p>5500 BDT</p>
+                    <p id="my-amount">5500 BDT</p>
                 </div>
 
                 </div>
@@ -79,9 +79,9 @@
              <div class=" ml-3 mr-3 ">
 
                 <div>
-                <button class="px-5 py-3 rounded-md  flex gap-2 bg-gray-100 mt-5 xl:mt-0">
+                <button id="first-donate" class="px-5 py-3 rounded-md  flex gap-2 bg-gray-100 mt-5 xl:mt-0">
                     <img src="./assets/coin.png" alt="">
-                    <span>0 BDT</span>
+                    <span >0 BDT</span>
                 </button>
                 </div> <br>
 
@@ -100,12 +100,12 @@
 
 
                      <div >
-                    <input  class="border rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="" placeholder="write Donation Amount">
+                    <input   class="border rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="donateInputOne" placeholder="write Donation Amount">
                     </div> <br>
 
                     
                   <div>
-                    <button  class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md">
+                    <button id="donate-click-one"  class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md">
                         Donate Now
                     </button>
                   </div>  
@@ -131,7 +131,7 @@
              <div class=" ml-3 mr-3 ">
 
                 <div>
-                <button class="px-5 py-3 rounded-md flex gap-2 bg-gray-100 mt-5 xl:mt-0">
+                <button id="second-donate" class="px-5 py-3 rounded-md flex gap-2 bg-gray-100 mt-5 xl:mt-0">
                     <img src="./assets/coin.png" alt="">
                     <span>600 BDT</span>
                 </button>
@@ -154,12 +154,12 @@
 
 
                      <div >
-                    <input class="border  rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="taka-input" placeholder="write Donation Amount">
+                    <input class="border  rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="donateInputTwo" placeholder="write Donation Amount">
                     </div> <br>
 
                     
                   <div>
-                    <button id="donate-btn" class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md xl:mt-2">
+                    <button id="donate-click-two" class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md xl:mt-2">
                         Donate Now
                     </button>
                   </div>  
@@ -184,7 +184,7 @@
              <div class=" ml-3 mr-3 ">
 
                 <div>
-                <button class="px-5 py-3 border  flex gap-2 bg-gray-100 mt-5 xl:mt-0">
+                <button id="third-donate" class="px-5 py-3 border  flex gap-2 bg-gray-100 mt-5 xl:mt-0">
                     <img src="./assets/coin.png" alt="">
                     <span>2400 BDT</span>
                 </button>
@@ -210,13 +210,14 @@
 
 
                      <div >
-                    <input class="border  rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="" placeholder="write Donation Amount">
+                    <input class="border  rounded-md mt-3 px-7 py-3 w-10/12" type="text" name="" id="donateInputThree" placeholder="write Donation Amount">
                     </div> <br>
                     
 
                     
                   <div>
-                    <button class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md xl:mt-2">
+                    <button id="donate-click-three"
+                     class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md xl:mt-2">
                         Donate Now
                     </button>
                   </div>  
