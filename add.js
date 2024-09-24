@@ -48,7 +48,7 @@
 const blog = document.getElementById("blog");
 
 blog.addEventListener("click", () => {
-    window.location.href = "https://nayem-islam-02.github.io/Assignment-5-repo/Blog.html";
+    window.location.href = "Blog.html";
   });
   
 
