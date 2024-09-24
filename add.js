@@ -48,7 +48,7 @@
 const blog = document.getElementById("blog");
 
 blog.addEventListener("click", () => {
-    window.location.href = "/index.html";
+    window.location.href = "https://nayem-islam-02.github.io/Assignment-5-repo/Blog.html";
   });
   
 
@@ -89,12 +89,16 @@ document.getElementById('donate-click-one').addEventListener('click', function(e
 
     const historyItem = document.createElement("div");
 
+    const nowTime = new Date();
+    const donationDate = nowTime.toString();
+
 historyItem.className ="bg-white rounded-md border border-indigo-500";
 
 historyItem.innerHTML= `
 <p class="font-bold px-3 py-2"> ${donateInputOne} Taka is Donate for Flood at Noakhali, Bangladesh</p>
 
-<p class="font-bold px-3 py-2"> Date: ${new Date().toLocaleDateString()}</p>
+<p class="font-bold px-3 py-2"> Date: ${donationDate} </p>
+
 `;
 
 const historyContainer = document.getElementById("history-list");
@@ -114,10 +118,12 @@ document.getElementById('donate-click-two').addEventListener('click', function(e
 
     if(isNaN(donateInputTwo)){
         alert('please entered the valid Number');
+        return
     }
 
     else if(donateInputTwo < 0){
-        alert('Negative Number are not allowed')
+        alert('Negative Number are not allowed');
+        return
     }
 
     else{
@@ -138,12 +144,15 @@ document.getElementById('donate-click-two').addEventListener('click', function(e
 
     const historyItem = document.createElement("div");
 
+    const nowTime = new Date();
+    const donationDate = nowTime.toString();
+
 historyItem.className ="bg-white rounded-md border border-indigo-500";
 
 historyItem.innerHTML= `
 <p class="font-bold px-3 py-2"> ${donateInputTwo}  Taka is Donated for Flood Relief in Feni,Bangladesh</p>
 
-<p class="font-bold px-3 py-2"> Date: ${new Date().toLocaleDateString()}</p>
+<p class="font-bold px-3 py-2"> Date: ${donationDate} </p>
 `;
 
 const historyContainer = document.getElementById("history-list");
@@ -159,10 +168,12 @@ document.getElementById('donate-click-three').addEventListener('click', function
 
     if(isNaN(donateInputThree)){
         alert('please entered the valid Number');
+        return
     }
 
     else if(donateInputThree < 0){
-        alert('Negative Number are not allowed')
+        alert('Negative Number are not allowed');
+        return
     }
 
     else{
@@ -183,12 +194,15 @@ document.getElementById('donate-click-three').addEventListener('click', function
 
     const historyItem = document.createElement("div");
 
+    const nowTime = new Date();
+    const donationDate = nowTime.toString();
+
 historyItem.className ="bg-white rounded-md border border-indigo-500";
 
 historyItem.innerHTML= `
 <p class="font-bold px-3 py-2"> ${donateInputThree}  Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
 
-<p class="font-bold px-3 py-2"> Date: ${new Date().toLocaleDateString()}</p>
+<p class="font-bold px-3 py-2"> Date: ${donationDate} </p>
 `;
 
 const historyContainer = document.getElementById("history-list");
