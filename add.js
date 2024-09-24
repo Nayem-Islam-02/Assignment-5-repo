@@ -47,7 +47,7 @@
 
 const blog = document.getElementById("blog");
 
-blog.addEventListener("click", () => {
+blog.addEventListener("click", function(){
     window.location.href = "blog.html";
   });
   
