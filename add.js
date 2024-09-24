@@ -1,47 +1,5 @@
 
 
-
-// function btnInput() {
-    // const inputValue = parseFloat(document.getElementById('donateInput').value);
-
-    // if (isNaN(inputValue)) {
-        // alert('Please enter a valid number.');
-    // } else if (inputValue < 0) {
-        // alert('You entered a negative value!');
-    // } else {
-        // alert('The value is non-negative.');
-    // }
-// }
-// __________
-// conceptual ar moto
-
-// const donateBtnOne = document.getElementById("donate-click-one");
-// donateBtnOne.addEventListener("click", function(){
-    // const amountMoneyOne = parseFloat(document.getElementById("donateInputOne").value);
-    
-    
-
-    
-// })
-
-
-// const donateBtnTwo = document.getElementById("donate-click-two");
-// donateBtnTwo.addEventListener("click", function(){
-    // const amountMoneyTwo = parseFloat(document.getElementById("donateInputTwo").value);
-
-    
-// })
-
-
-// const donateBtnThree = document.getElementById("donate-click-three");
-// donateBtnThree.addEventListener("click", function(){
-    // const amountMoneyThree = parseFloat(document.getElementById("donateInputThree").value);
-
-    
-
-// })
-
-
 // --------------
 // blog link
 
