@@ -43,6 +43,19 @@
 
 
 // --------------
+// blog link
+
+const blog = document.getElementById("blog");
+
+blog.addEventListener("click", () => {
+    window.location.href = "/blog.html";
+  });
+  
+
+
+// modal
+const modal = document.getElementById("modal");
+
 //    for one
 document.getElementById('donate-click-one').addEventListener('click', function(event){
     event.preventDefault();
@@ -55,10 +68,12 @@ document.getElementById('donate-click-one').addEventListener('click', function(e
     else if(donateInputOne < 0){
         alert('Negative Number are not allowed')
     }
-
     else{
-        alert('Number is entered')
+        modal.showModal();
+
     }
+
+    
     let coinNumber = parseFloat(document.getElementById('first-donate').innerText);
     let totalDonate = coinNumber + donateInputOne;
     document.getElementById('first-donate').innerText = totalDonate;
@@ -104,8 +119,10 @@ document.getElementById('donate-click-two').addEventListener('click', function(e
     }
 
     else{
-        alert('Number is entered')
+        modal.showModal();
+
     }
+
     let coinNumber = parseFloat(document.getElementById('second-donate').innerText);
     let totalDonate = coinNumber + donateInputTwo;
     document.getElementById('second-donate').innerText = totalDonate;
@@ -147,8 +164,10 @@ document.getElementById('donate-click-three').addEventListener('click', function
     }
 
     else{
-        alert('Number is entered')
+        modal.showModal();
+
     }
+
     let coinNumber = parseFloat(document.getElementById('third-donate').innerText);
     let totalDonate = coinNumber + donateInputThree;
     document.getElementById('third-donate').innerText = totalDonate;
@@ -201,3 +220,19 @@ donationTab.addEventListener('click', function(){
     document.getElementById("donationHistory").classList.add("hidden");
 
 })
+
+
+
+
+
+// const donationDate = currentTime.toString();
+//   const newDonation = document.createElement("div");
+//   newDonation.innerHTML = `
+//            <div class="border rounded-lg p-6">
+//             <h1 class="text-2xl font-bold">
+//               ${amount} ${text}
+//             </h1>
+//             <p class="text-gray-600 font-semibold">
+//               Date: ${donationDate} 
+//             </p>
+//             </div>

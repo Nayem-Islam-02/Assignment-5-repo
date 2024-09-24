@@ -108,6 +108,8 @@
                     <button id="donate-click-one"  class="bg-yellow-200 font-bold px-7 py-3 w-10/12 rounded-md">
                         Donate Now
                     </button>
+
+                    
                   </div>  
 
 
@@ -232,6 +234,38 @@
 
          </div>
            <!-- card three end -->
+             
+           <!-- modal -->
+
+           <dialog
+           id="modal"
+           class="modal modal-bottom sm:modal-middle rounded-lg"
+         >
+           <div class="w-full sm:w-1/3 bg-white rounded-lg px-8 py-3">
+             <div class="flex flex-col items-center justify-center">
+               <h3 class="text-3xl font-bold">Congrates!</h3>
+               <img class="mt-6" src="/assets/coin.png" alt="" />
+               <p class="py-3 text-gray-600 font-semibold">
+                 You Have Donated for HumanKind
+               </p>
+               <h3 class="text-lg font-bold">Successfully</h3>
+               <div class="modal-action">
+                 <form method="dialog">
+                   <button
+                     class="py-2 px-3 rounded-lg font-semibold text-white bg-red-500 hover:bg-red-600"
+                   >
+                     Close Confirmation
+                   </button>
+                 </form>
+               </div>
+             </div>
+           </div>
+         </dialog>
+       
+
+
+
+
         </main>
 
            <!-- history of donation -->
