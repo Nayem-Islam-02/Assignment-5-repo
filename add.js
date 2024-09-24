@@ -199,14 +199,3 @@ donationTab.addEventListener('click', function(){
 
 
 
-// const donationDate = currentTime.toString();
-//   const newDonation = document.createElement("div");
-//   newDonation.innerHTML = `
-//            <div class="border rounded-lg p-6">
-//             <h1 class="text-2xl font-bold">
-//               ${amount} ${text}
-//             </h1>
-//             <p class="text-gray-600 font-semibold">
-//               Date: ${donationDate} 
-//             </p>
-//             </div>
