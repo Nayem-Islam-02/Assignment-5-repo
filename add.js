@@ -48,7 +48,7 @@
 const blog = document.getElementById("blog");
 
 blog.addEventListener("click", () => {
-    window.location.href = "/blog.html";
+    window.location.href = "/index.html";
   });
   
 
@@ -63,10 +63,12 @@ document.getElementById('donate-click-one').addEventListener('click', function(e
 
     if(isNaN(donateInputOne)){
         alert('please entered the valid Number');
+        return
     }
 
     else if(donateInputOne < 0){
         alert('Negative Number are not allowed')
+        return
     }
     else{
         modal.showModal();
